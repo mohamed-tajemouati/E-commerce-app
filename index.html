@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/139d8ece62.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
@@ -18,47 +19,48 @@
     <header class="container">
       <div class="top-header flex-between">
         <div class="flex-between">
-          <p>EN<span> &#9662;</span></p>
-          <p>USD<span> &#9662;</span></p>
+        <select class="choices" name="langue" id="langue">
+        <option value="english">EN</option>
+        <option value="french">FR</option>
+        <option value="arabe">AR</option>
+      </select>
+      <select class="choices" name="currency" id="currency">
+        <option value="unated stat dollar">USD</option>
+        <option value="eoro">EUR</option>
+        <option value="maroc dirham">MAD</option>
+      </select>
+      
         </div>
         <div>
           <div class="flex-between personal-info">
-            <div class="flex-start">
-              <a href="#"
-                ><img
-                  src="./images/header-images/profile_close_2.png"
-                  alt="profile"
-              /></a>
-              <p>my profile</p>
-            </div>
-
-            <a href="#"
-              ><img src="./images/header-images/basket.png" alt="basket"
-            /></a>
-
-            <p>Items</p>
-
-            <div class="flex-start">
-              <strong class="price">$0.00</strong>
+            <div class="profile">
               <a href="#">
-                <img src="./images/header-images/search-icon.png" alt="search"
-              /></a>
+              <i class="fa-regular fa-user"></i>
+              my profile</a>
             </div>
+
+
+            <a href="">Items</a>
+
+            <a href="">
+              <strong class="price">$0.00</strong>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="main-header flex-between">
-        <div class="aling-center">
-          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
-          <span class="logo-text">E-comm</span>
+        <div >
+          <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
+          <span class="logo-text">E-comm</span></a>
         </div>
         <nav>
           <ul class="flex-between header-ul">
             <li>
               <a href="#" class="active hover relative">HOME</a>
-              <div class="flex-between categorys absolute">
-                <div>
-                  <h3 class="ratings">Category</h3>
+              <ul class="flex-between categorys absolute">
+                
+                  <li class="ratings">Category
                   <ul>
                     <li class="category"><a href="#">Coporate Shoes</a></li>
                     <li class="category"><a href="#">Sneakers</a></li>
@@ -66,8 +68,8 @@
                     <li class="category"><a href="#">Sport Shoe</a></li>
                     <li class="category"><a href="#">Trainers</a></li>
                   </ul>
-                </div>
-                <div class="align-self">
+                </li>
+                <li class="align-self ratings">
                   <ul>
                     <li class="category"><a href="#">Coporate Shoes</a></li>
                     <li class="category"><a href="#">Sneakers</a></li>
@@ -75,9 +77,8 @@
                     <li class="category"><a href="#">Sport Shoe</a></li>
                     <li class="category"><a href="#">Trainers</a></li>
                   </ul>
-                </div>
-                <div>
-                  <h3 class="ratings">Category</h3>
+                </li>
+                <li class="ratings">Category
                   <ul>
                     <li class="category"><a href="#">HOT DEAL</a></li>
                     <li class="category"><a href="#">Sunglasses</a></li>
@@ -85,8 +86,8 @@
                     <li class="category"><a href="#">Handbags</a></li>
                     <li class="category"><a href="#">Sneakers</a></li>
                   </ul>
-                </div>
-                <div class="align-self">
+                </li>
+                <li class="align-self ratings">
                   <ul>
                     <li class="category"><a href="#">HOT DEAL</a></li>
                     <li class="category"><a href="#">Sunglasses</a></li>
@@ -94,9 +95,8 @@
                     <li class="category"><a href="#"> Handbags</a></li>
                     <li class="category"><a href="#">Sneakers</a></li>
                   </ul>
-                </div>
-                <div>
-                  <h3 class="ratings">Category</h3>
+                </li>
+                <li class="ratings">Category
                   <ul>
                     <li class="category"><a href="#">Coporate Shoes</a></li>
                     <li class="category"><a href="#">Sneakers</a></li>
@@ -104,8 +104,8 @@
                     <li class="category"><a href="#"> Sport Shoe</a></li>
                     <li class="category"><a href="#">Trainers</a></li>
                   </ul>
-                </div>
-              </div>
+                </li>
+              </ul>
             </li>
             <li><a href="#" class="hover">BAGS</a></li>
             <li><a href="#" class="hover">SNAEKERS</a></li>
@@ -116,39 +116,46 @@
       </div>
     </header>
     <main>
-      <section class="sale">
+      <section class="hero">
         <div class="container best-chois aling-center">
           <h1>Super Flash Sale 50% Off</h1>
         </div>
       </section>
       <section>
-        <div class="flex-center cuts relative">
-          <article class="bag relative">
-            <h3 class="discount-title cross-bag neutrale-dark">
+        <div class="flex-center relative">
+          <article class="bag offers ">
+            <h2 class="discount-title cross-bag neutrale-dark">
               FS - QUILTED MAXI CROSS BAG
-            </h3>
-            <span class="old-price absolute text-decoration">$534,33</span>
-            <strong class="ratio absolute primary-red">24% Off</strong>
-            <strong class="new-price absolute primary-blue">$299,43</strong>
+            </h2>
+            <div>
+              
+            <span class="old-price  text-decoration">$534,33</span>
+            <strong class="ratio  primary-red">24% Off</strong>
+            </div>
+            <strong class="new-price  primary-blue">$299,43</strong>
           </article>
-          <article class="yellow-shoes relative">
-            <h3 class="discount-title air-max neutrale-dark">
+          <article class="yellow-shoes ">
+            <div class="medium">
+            <h2 class="discount-title air-max neutrale-dark">
               FS - Nike Air Max 270 React...
-            </h3>
-
-            <span class="old-price absolute text-decoration">$534,33</span>
-            <strong class="ratio absolute primary-red">24% Off</strong>
-
-            <strong class="new-price absolute primary-blue">$299,43</strong>
+            </h2>
+            <strong class="new-price primary-blue">$299,43</strong>
+          </div>
+<div class="align-end">
+            <span class="old-price  text-decoration">$534,33</span>
+            <strong class="ratio primary-red">24% Off</strong>
+          </div>
+           
           </article>
-          <article class="red-shoes relative">
-            <h3 class="discount-title air-max neutrale-dark">
+          <article class="red-shoes  offers">
+            <h2 class="discount-title air-max neutrale-dark">
               FS - Nike Air Max 270 React...
-            </h3>
-
-            <span class="old-price absolute text-decoration">$534,33</span>
-            <strong class="ratio absolute primary-red">24% Off</strong>
-            <strong class="new-price absolute primary-blue">$299,43</strong>
+            </h2>
+<div class="free-space">
+            <span class="old-price  text-decoration">$534,33</span>
+            <strong class="ratio  primary-red">24% Off</strong>
+          </div>
+            <strong class="new-price  primary-blue">$299,43</strong>
           </article>
         </div>
       </section>
@@ -156,11 +163,11 @@
         <h2 class="seller-title">BEST SELLER</h2>
         <nav>
           <ul class="flex-center seller">
-            <li><a href="#" class="hover active line">all</a></li>
-            <li><a href="#" class="hover line-hover">bags</a></li>
-            <li><a href="#" class="hover line-hover">Sneakers</a></li>
-            <li><a href="#" class="hover line-hover">belt</a></li>
-            <li><a href="#" class="hover line-hover">Sunglasses</a></li>
+            <li><button class="hover active line">all</button></li>
+            <li><button class="hover line-hover">bags</button></li>
+            <li><button class="hover line-hover">Sneakers</button></li>
+            <li><button class="hover line-hover">belt</button></li>
+            <li><button class="hover line-hover">Sunglasses</button></li>
           </ul>
         </nav>
 
@@ -182,7 +189,7 @@
             <img  src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
@@ -207,7 +214,7 @@
             <img  src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
@@ -232,7 +239,7 @@
             <img src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
@@ -257,7 +264,7 @@
             <img  src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
@@ -284,7 +291,7 @@
             <img src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
@@ -309,7 +316,7 @@
             <img src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
@@ -334,7 +341,7 @@
             <img src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
@@ -359,12 +366,12 @@
             <img src="./images/stars.png" alt="stars" />
             <div>
               <strong class="new-price-seller primary-blue">$299,43</strong>
-              <span class="old-price-seller text-decoration">$534,33</span>
+              <del class="old-price-seller text-decoration">$534,33</del>
               <strong class="ratio-seller primary-red">24% Off</strong>
             </div>
           </article>
         </div>
-        <a href="#" class="line more-seller primary-blue">LOAD MORE</a>
+        <button class="line more-seller primary-blue">LOAD MORE</button>
       </section>
       <section class="adidas relative">
         <div class="shop container">
@@ -377,26 +384,23 @@
       </section>
       <section>
         <div class="flex-between container best-way">
-          <div class="shipping">
-            <img src="./images/shipping.png" alt="truck" />
-            <h3 class="how-to">FREE SHIPPING</h3>
-            <p class="lorem">
+          <div class="shipping awsome-1">
+            <h3 class="shipping-haeding">FREE SHIPPING</h3>
+            <p class="brief">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
           </div>
-          <div class="shipping">
-            <img src="./images/refund.png" alt="euro" />
-            <h3 class="how-to">100% REFUND</h3>
-            <p class="lorem">
+          <div class="shipping awsome-2">
+            <h3 class="shipping-haeding">100% REFUND</h3>
+            <p class="brief">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
           </div>
-          <div class="shipping">
-            <img src="./images/support.png" alt="support" />
-            <h3 class="how-to">SUPPORT 24/7</h3>
-            <p class="lorem">
+          <div class="shipping awsome-3">
+            <h3 class="shipping-haeding">SUPPORT 24/7</h3>
+            <p class="brief">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
@@ -412,7 +416,7 @@
             <div class="news-discription">
               <span class="date">01 Jan, 2015</span>
               <h3 class="latest">Fashion Industry</h3>
-              <p class="lorem">
+              <p class="brief">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -423,7 +427,7 @@
             <div class="news-discription">
               <span class="date">01 Jan, 2015</span>
               <h3 class="latest">Best Design Tools</h3>
-              <p class="lorem">
+              <p class="brief">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -434,7 +438,7 @@
             <div class="news-discription">
               <span class="date">01 Jan, 2015</span>
               <h3 class="latest">HR Community</h3>
-              <p class="lorem">
+              <p class="brief">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -489,11 +493,11 @@
         <div class="container">
       <div class="flex-between align-flex-start adress ">
         <div>
-            <div class="aling-center">
-                <a href="#"><img src="./images/logo.png" alt="logo" /></a>
-                <span class="logo-text">E-comm</span>
+            <div >
+                <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
+                <span class="logo-text">E-comm</span></a>
               </div>
-          <p class="lorem-footer">
+          <p class="footer-paragraph">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever.Since the 1500s, when an unknown printer.
@@ -502,54 +506,52 @@
         <div class="contact-follow">
             <h3>Follow Us</h3>
             <p class="follow">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-            <img src="./images/facebook.png" alt="facebook-logo">
-            <img src="./images/twitter.png" class="twitter" alt="twitter-logo">
+            <a href="#"><img src="./images/facebook.png" alt="facebook-logo"></a>
+            <a href="#"><img src="./images/twitter.png" class="twitter" alt="twitter-logo"></a>
         </div>
         <div class="contact-follow">
             <h3 >Contact Us</h3>
-            <p class="contact">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+            <address class="contact">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</address>
         </div>
       </div>
-      <div class="flex-between align-flex-start navigation">
-        <div>
-            <h3>Infomation</h3>
-            <ul class="footer-ul">
-                <a href="#" class=""><li>About Us</li></a>
-                <a href="#" class=""><li> Infomation </li></a>
-                <a href="#" class=""><li> Privacy Policy</li></a>
-                <a href="#" class=""><li>Terms & Conditions</li></a>
+      <ul class="flex-between more ">
+      <li class="more-title" >information
+        <ul class="footer-ul">
+              <li><a href=""> About Us </a></li> 
+              <li><a href="">  Infomation </a></li> 
+              <li><a href="">  Privacy Policy</a></li> 
+              <li><a href=""> Terms & Conditions</a></li> 
+      </ul>
+    </li>
+       
+            <li  class="more-title">Service
+              <ul class="footer-ul">
+              <li> <a href="#" class="">About Us</a></li>
+              <li> <a href="#" class=""> Infomation </a></li>
+              <li> <a href="#" class=""> Privacy Policy</a></li>
+              <li> <a href="#" class="">Terms & Conditions</a></li>
             </ul>
-        </div>
-        <div>
-            <h3>Service</h3>
-            <ul class="footer-ul">
-                <a href="#" class=""><li>About Us</li></a>
-                <a href="#" class=""><li> Infomation </li></a>
-                <a href="#" class=""><li> Privacy Policy</li></a>
-                <a href="#" class=""><li>Terms & Conditions</li></a>
+            </li>
+            <li class="more-title">My Account
+              <ul class="footer-ul">
+               <li> <a href="#" class="">About Us</a></li>
+               <li> <a href="#" class=""> Infomation </a></li>
+               <li> <a href="#" class=""> Privacy Policy</a></li>
+               <li> <a href="#" class="">Terms & Conditions</a></li>
+               </ul>
+              </li>
+            <li class="more-title">Our Offers
+              <ul class="footer-ul ">
+              <li>  <a href="#" class=""></a>About Us</a></li>
+              <li>  <a href="#" class=""></a> Infomation</a></li>
+              <li>  <a href="#" class=""></a> Privacy Policy</a></li>
+              <li>  <a href="#" class=""></a>Terms & Conditions</a></li>
             </ul>
-        </div>
-        <div>
-            <h3>My Account</h3>
-            <ul class="footer-ul">
-                <a href="#" class=""><li>About Us</li></a>
-                <a href="#" class=""><li> Infomation </li></a>
-                <a href="#" class=""><li> Privacy Policy</li></a>
-                <a href="#" class=""><li>Terms & Conditions</li></a>
+            </li>
             </ul>
-        </div>
-        <div>
-            <h3 class="">Our Offers</h3>
-            <ul class="footer-ul">
-                <a href="#" class=""><li>About Us</li></a>
-                <a href="#" class=""><li> Infomation </li></a>
-                <a href="#" class=""><li> Privacy Policy</li></a>
-                <a href="#" class=""><li>Terms & Conditions</li></a>
-            </ul>
-        </div>
-      </div>
+    
       <div class="flex-between main-footer">
-        <p class="adress-web">© 2018 Ecommerce theme by www.bisenbaev.com</p>
+        <address class="adress-web">© 2018 Ecommerce theme by www.bisenbaev.com</address>
         <div>
             <img src="./images/western-union.png" alt="western-union-logo">
             <img src="./images/master-card.png" alt="master-card">

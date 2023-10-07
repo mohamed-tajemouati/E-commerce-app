@@ -8,6 +8,8 @@ body{
 font-family: 'Poppins', sans-serif;
 }
 
+
+
 li{
   list-style: none;
 }
@@ -24,6 +26,13 @@ h1 {
   line-height: 96px;
   letter-spacing: 0.5px;
   color: #ffffff;
+}
+
+button{
+  text-decoration: none;
+  border: none;
+  font-size: 22px;
+  background-color: white;
 }
 
 .ratings {
@@ -55,27 +64,47 @@ align-items: center;
 }
 
 .top-header{
-  padding-top: 10px;
+  padding: 20px 0 10px;
   border-bottom: 2px solid #fafafb;
   font-size: 20px;
   line-height: 24px;
+}
 
+.choices{
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .personal-info {
 gap: 20px;
+}
+
+.profile{
+position: relative;
+margin-right: 85px;
+}
+
+.profile::after{
+  content:'';
+  position: absolute;
+background-image: url(../images/header-images/basket.png);
+width: 76px;
+height: 40px;
+bottom: 2px;
 }
 .price{
   opacity: 50%;
 }
 
 .main-header  {
-padding-bottom: 27px;
+  padding: 20px 0 25px;
 }
 
 .aling-center {
 display: flex;
 align-items: center;
+text-align: center;
 }
 
 .align-self {
@@ -88,6 +117,7 @@ align-items: center;
   font-weight: 700;
   line-height: 27px;
   padding-left: 5px;
+
  }
 
  .header-ul {
@@ -110,7 +140,7 @@ color:#40bfff
   color: #40bfff;
  }
 
- .sale {
+ .hero {
  background-image:url(../images/promotion-image.png) ;
  background-repeat: no-repeat;
 background-size: cover;
@@ -167,7 +197,21 @@ background-size: cover;
 
  .cross-bag {
  max-width: 288px;
+ flex: 1;
  }
+.medium{
+  display: flex;
+  justify-content: space-between;
+}
+.align-end{
+  height: 67%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.free-space{
+  flex: 1;
+}
 
  .relative {
  position: relative;
@@ -177,25 +221,21 @@ background-size: cover;
  position: absolute;
  }
 
- .bag>.old-price {
-  top: 261px;
-  left: 50px;
+ .offers{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
  }
 
  .old-price {
 font-size: 18px;
 line-height: 27px;
+padding-left: 30px;
  }
 
  .text-decoration {
   color: #9098b1;
-  text-decoration-line: line-through;
 letter-spacing: 0.5px;
- }
-
- .bag>.ratio {
-  top: 261px;
-  left: 135px;
  }
 
 .primary-red {
@@ -209,18 +249,13 @@ letter-spacing: 0.5px;
 
  }
 
- .bag>.new-price {
-  right: 20px;
-  top: 279px;
- }
-
  .new-price {
   font-family: Raleway;
   font-size: 30px;
   font-weight: 700;
   line-height: 54px;
   letter-spacing: 0.5px;
-
+align-self: self-end;
  }
 
  .air-max {
@@ -231,44 +266,13 @@ letter-spacing: 0.5px;
   background-image: url(../images/yellwo-shoes.png);
   width: 435px;
   height: 355px;
-  }
-
-
-
-  .yellow-shoes>.old-price {
-    top: 302px;
-    left: 146px;
-  }
-
-  .yellow-shoes>.ratio {
-    bottom: 27px;
-    right: 129px;
-  }
-
-  .yellow-shoes>.new-price {
-    top: 29px;
-    right: 45px;
+  padding: 20px;
   }
  
   .red-shoes {
   background-image: url(../images/red-shoes.png);
   width: 410px;
   height: 358px;
-  }
-
-  .red-shoes>.old-price {
-    top: 103px;
-    left: 30px;
-  }
-
-  .red-shoes>.ratio {
-    top: 103px;
-    left: 116px;
-  }
-
-  .red-shoes>.new-price {
-    bottom: 10px;
-    right: 40px;
   }
 
   .best-seller {
@@ -279,11 +283,12 @@ letter-spacing: 0.5px;
     font-size: 35px;
     font-weight: 600;
     line-height: 53px;
+    padding-top: 40px;
     }
 
   .seller {
   gap: 60px;
-font-size: 22px;
+
 padding: 40px 0;
   }
 
@@ -397,8 +402,16 @@ padding: 40px 0;
     font-weight: 600;
     line-height: 30px;
     color: #ffffff;
-    border-bottom: 3px solid #ffffff;
+    position: relative;
+  }
 
+  .shop-now::after{
+    content: "";
+    position: absolute;
+    border: 3px solid #ffffff;
+    width: 60%;
+    left: 2px;
+    top: 30px;
   }
 
   .best-way {
@@ -407,16 +420,48 @@ padding: 40px 0;
 
   .shipping {
     text-align: center;
+    position: relative;
+    padding-top: 90px;
   }
 
-  .how-to {
+  .awsome-1::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/shipping.png);
+    width: 101px;
+    height: 67px;
+    top: 20px;
+    left: 45px;
+  }
+
+  .awsome-2::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/refund.png);
+    width: 70px;
+    height: 79px;
+    top: 10px;
+    left: 70px;
+  }
+
+  .awsome-3::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/support.png);
+    width: 69px;
+    height: 89px;
+    top: 10px;
+    left: 65px;
+  }
+
+  .shipping-haeding {
     font-size: 27px;
     font-weight: 500;
     line-height: 41px;
     padding-top: 35px;
   }
 
-  .lorem {
+  .brief {
   max-width: 198px;
   font-family: Proxima Nova;
 font-size: 18px;
@@ -525,7 +570,7 @@ line-height: 30px;
   }
 
   .submit:hover {
-  transform: scale(1.1);
+  background-color: #21b2fa;
   }
 
   .ecomm {
@@ -538,7 +583,7 @@ line-height: 30px;
   padding-left: 25px;
   }
 
-  .lorem-footer {
+  .footer-paragraph {
   max-width: 330px;
   padding-top: 10px;
   }
@@ -565,13 +610,20 @@ line-height: 21px;
 padding-top: 20px;
   }
 
+  .more{
+    padding: 70px 60px 70px 25px;
+  }
+
+  .more-title{
+    font-size: 18px;
+  }
+
   .footer-ul {
 font-size: 14px;
 line-height: 21px;
 padding-top: 20px;
   }
-
-  .navigation {
+    .navigation {
   padding: 69px 60px 60px 30px;
   }
 
