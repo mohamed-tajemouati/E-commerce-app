@@ -1,0 +1,53 @@
+
+h2{
+font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+
+}
+
+aside{
+    width:20%;
+}
+
+
+.bread-crumps{
+    text-align: center;
+    background-color: #f6f7f8;
+    padding: 15px 0;
+}
+
+.nav-braed-crumps{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.deals{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+
+.top-aside{
+    display: flex;
+}
+
+.box-1{
+    background-color: #f6f7f8;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.li-aside{
+    padding-top: 20px;
+}
+
+.deals-quantity {
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: right;
+    opacity: 35%;
+}
