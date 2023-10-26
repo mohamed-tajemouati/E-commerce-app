@@ -1,53 +1,404 @@
-
-h2{
-font-family: Poppins;
-font-size: 18px;
-font-weight: 500;
-line-height: 27px;
-
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
 }
 
-aside{
-    width:20%;
+aside {
+  width: 22%;
 }
 
-
-.bread-crumps{
-    text-align: center;
-    background-color: #f6f7f8;
-    padding: 15px 0;
+.bread-crumps {
+  text-align: center;
+  background-color: #f6f7f8;
+  padding: 15px 0;
+  font-size: 18px;
 }
 
-.nav-braed-crumps{
-    font-size: 18px;
-    font-weight: 400;
+.slach{
+  position: relative;
+  padding-right: 10px;
 }
 
-.deals{
-    padding-top: 40px;
-    padding-bottom: 60px;
+.slach::after{
+  content:"/";
+  position: absolute;
+  width: 15px;
+  color: rgb(193, 200, 206);
+font-size: 10px;
+top: 7px;
 }
 
-
-.top-aside{
-    display: flex;
+.deals {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
-.box-1{
-    background-color: #f6f7f8;
-    border-radius: 5px;
-    padding: 20px;
+.box-1 {
+  background-color: #f6f7f8;
+  border-radius: 3px;
+  padding: 20px;
 }
 
-.li-aside{
-    padding-top: 20px;
+.li-aside {
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 .deals-quantity {
-    font-family: Proxima Nova;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     text-align: right;
     opacity: 35%;
 }
+.deals-prices{
+    background-color: #f6f7f8;
+  border-radius: 3px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.above-range  {
+font-size: 18px;
+line-height: 22px;
+text-align: left;
+
+padding-bottom: 15px;
+padding-top: 20px;
+}
+
+.price-range {
+padding-left: 32px;
+}
+
+.range-input {
+width: 100%;
+}
+
+.form-check{
+     background-color: #f6f7f8;
+  border-radius: 3px;
+  padding: 30px 20px;
+  margin-top: 30px;
+}
+
+.form-check-gap{
+  display: flex;
+  gap: 22px;
+  padding-top: 20px;
+}
+
+input[type="radio"]:checked {
+
+outline: 2px solid rgba(0, 108, 255, 0.5);
+border: 3px solid white;
+}
+
+
+.form-check-blue[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+ background: #006cff;
+
+    border-radius: 50%;
+}
+
+.form-check-orange[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #fc3e39;
+
+    border-radius: 50%;
+}
+
+.form-check-black[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #171717;
+
+    border-radius: 50%;
+}
+
+.form-check-yellow[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+   background: #fff600;
+
+    border-radius: 50%;
+}
+
+.form-check-dark-pink[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+   background: #ff00b4;
+
+    border-radius: 50%;
+}
+
+.form-check-light-pink[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #efdfdf;
+    border-radius: 50%;
+}
+
+.main-aside{
+    background-color: #f6f7f8;
+  border-radius: 3px;
+  padding: 30px 20px;
+  margin-top: 30px; 
+}
+
+.hide-more{
+display: none;
+}
+
+input[type=checkbox].hide-input:checked + .hide-more{
+display: block;
+}
+
+.hide-input {
+  position: absolute;
+  left: -15px;
+}
+
+.more-button {
+    padding: 20px 10px;
+  margin-top: 30px; 
+  text-align: center;
+  display:inline-block;
+  cursor: pointer;
+   background: #f6f7f8;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.product{
+ width: 78%;
+ margin-left: 30px;
+ position: relative;
+}
+
+.adidas{
+ 
+  height: 300px;
+  margin-top: 0 ;
+  margin-bottom: 15px;
+  
+}
+
+.adidas::after{
+  background-image: url(../images/adidas-2.png);
+  width: 397px;
+height: 297px;
+    top: -25px;
+    right: 150px;
+
+}
+
+.adidas-men{
+  font-size: 30px;
+  max-width: 350px;
+  line-height: 45px;
+}
+.paragraphe{
+  font-size: 14px;
+}
+
+.nav-product{
+background: #f6f7f8;
+  padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+.nav-product::after{
+content: "";
+background-image: url(../images/switch-1.png);
+width: 23px;
+height: 21px;
+position: absolute;
+right: 57px;
+overflow: hidden;
+background-repeat: no-repeat;
+}
+.nav-product::before{
+content: "";
+background-image: url(../images/switch-2.png);
+width: 56px;
+height: 59px;
+position: absolute;
+right: 2px;
+
+}
+
+select option[value="1"] {
+   border: 2px solid #f1f3f4;
+  background: transparent;
+  padding: 10px 30px;
+}
+
+.chow-select {
+flex: 1;
+margin-left: 30px;
+gap: 5px;
+}
+
+.sort-select {
+margin-left: 30px;
+}
+
+.nav-select{
+  border: 2px solid #f1f3f4;
+  background: transparent;
+  padding: 10px 30px;
+}
+
+.flex {
+ display: flex;
+}
+.brand-article{
+  position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+
+}
+
+.brand-article::before {
+content: "";
+background-image: url(../images/hot.png);
+width: 41px;
+height: 21px;
+position: absolute;
+left: 25px;
+top: 10px;
+}
+
+.brand-article::after {
+content: "";
+border: 2px solid #f6f7f8;
+position: absolute;
+width: 90%;
+bottom: 10px;
+left: 15px;
+}
+
+.shops {
+margin-left: 10px;
+}
+
+.brand {
+font-size: 24px;
+line-height: 36px;
+margin-bottom: 15px;
+}
+
+.star {
+width: 72px;
+height: 10px;
+}
+
+.review-nember {
+opacity: 0.5;
+margin: 0 5px;
+}
+
+.review-button {
+color: #33a0ff;
+font-size: 14px;
+line-height: 17px;
+
+}
+
+hr{
+  width: 470px;
+  height: 2px;
+border: none;
+background-color: #f6f7f8;
+margin: 15px 0;
+}
+
+.branded {
+font-size: 15px;
+line-height: 21px;
+margin: 15px 0 25px;
+}
+
+.shop-button {
+font-size: 14px;
+line-height: 17px;
+
+background: #ebf0ff;
+padding: 15px 15px 15px 50px;
+position: relative;
+border-radius: 5px;
+}
+
+.shop-button a{
+   color: #33a0ff;
+}
+
+.shop-button::before {
+content: "";
+background-image: url(../images/basket.png);
+width: 17px;
+height: 17px;
+position: absolute;
+left: 25px;
+}
+
+.heart {
+color: #33a0ff;
+background: #ebf0ff;
+padding: 14px;
+border-radius: 5px;
+margin-left: 15px;
+}
+
+.next-brand {
+  display: flex;
+justify-content: center;
+margin-top: 50px;
+background: #fafafb;
+
+}
+
+.button-next-brand {
+padding: 18px 30px;
+background: transparent;
+font-size: 18px;
+line-height: 21px;
+margin: 0 5px;
+}
+.button-next-brand:hover {
+ background: #40bfff;
+color: white;
+}
+.active-brand {
+ background: #40bfff;
+ color: white;
+}
+
+

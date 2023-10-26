@@ -1,502 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-comm</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/139d8ece62.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
 
-  <body>
-    <header class="container">
-      <div class="top-header flex-between">
-        <div class="flex-between">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-comm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/139d8ece62.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="top-header flex-between">
+      <div class="flex-between">
         <select class="choices" name="langue" id="langue">
-        <option value="english">EN</option>
-        <option value="french">FR</option>
-        <option value="arabe">AR</option>
-      </select>
-      <select class="choices" name="currency" id="currency">
-        <option value="unated stat dollar">USD</option>
-        <option value="eoro">EUR</option>
-        <option value="maroc dirham">MAD</option>
-      </select>
-      
-        </div>
-        <div>
-          <div class="flex-between personal-info">
-            <div class="profile">
-              <a href="#">
+          <option value="english">EN</option>
+          <option value="french">FR</option>
+          <option value="arabe">AR</option>
+        </select>
+        <select class="choices" name="currency" id="currency">
+          <option value="unated stat dollar">USD</option>
+          <option value="eoro">EUR</option>
+          <option value="maroc dirham">MAD</option>
+        </select>
+
+      </div>
+      <div>
+        <div class="flex-between personal-info">
+          <div class="profile">
+            <a href="#">
               <i class="fa-regular fa-user"></i>
               my profile</a>
-            </div>
-
-
-            <a href="">Items</a>
-
-            <a href="">
-              <strong class="price">$0.00</strong>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
           </div>
+
+
+          <a href="">Items</a>
+
+          <a href="">
+            <strong class="price">$0.00</strong>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
         </div>
       </div>
-      <div class="main-header flex-between">
-        <div >
-          <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
+    </div>
+    <div class="main-header flex-between">
+      <div>
+        <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
           <span class="logo-text">E-comm</span></a>
-        </div>
-        <nav>
-          <ul class="flex-between header-ul">
-            <li class="first-li">
-              <a href="#" class="active hover relative">HOME</a>
-              <ul class="flex-between categorys absolute">
-                
-                  <li class="ratings">Category
-                  <ul>
-                    <li class="category"><a href="#">Coporate Shoes</a></li>
-                    <li class="category"><a href="#">Sneakers</a></li>
-                    <li class="category"><a href="#">Sandals </a></li>
-                    <li class="category"><a href="#">Sport Shoe</a></li>
-                    <li class="category"><a href="#">Trainers</a></li>
-                  </ul>
-                </li>
-                <li class="align-self ratings">
-                  <ul>
-                    <li class="category"><a href="#">Coporate Shoes</a></li>
-                    <li class="category"><a href="#">Sneakers</a></li>
-                    <li class="category"><a href="#">Sandals</a></li>
-                    <li class="category"><a href="#">Sport Shoe</a></li>
-                    <li class="category"><a href="#">Trainers</a></li>
-                  </ul>
-                </li>
-                <li class="ratings">Category
-                  <ul>
-                    <li class="category"><a href="#">HOT DEAL</a></li>
-                    <li class="category"><a href="#">Sunglasses</a></li>
-                    <li class="category"><a href="#">Belts</a></li>
-                    <li class="category"><a href="#">Handbags</a></li>
-                    <li class="category"><a href="#">Sneakers</a></li>
-                  </ul>
-                </li>
-                <li class="align-self ratings">
-                  <ul>
-                    <li class="category"><a href="#">HOT DEAL</a></li>
-                    <li class="category"><a href="#">Sunglasses</a></li>
-                    <li class="category"><a href="#"> Belts</a></li>
-                    <li class="category"><a href="#"> Handbags</a></li>
-                    <li class="category"><a href="#">Sneakers</a></li>
-                  </ul>
-                </li>
-                <li class="ratings">Category
-                  <ul>
-                    <li class="category"><a href="#">Coporate Shoes</a></li>
-                    <li class="category"><a href="#">Sneakers</a></li>
-                    <li class="category"><a href="#"> Sandals</a></li>
-                    <li class="category"><a href="#"> Sport Shoe</a></li>
-                    <li class="category"><a href="#">Trainers</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#" class="hover">BAGS</a></li>
-            <li><a href="#" class="hover">SNAEKERS</a></li>
-            <li><a href="#" class="hover">BELT</a></li>
-            <li><a href="./contact-us.html" class="hover">CONTACT</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container best-chois aling-center">
-          <h1>Super Flash Sale 50% Off</h1>
-        </div>
-      </section>
-      <section>
-        <div class="flex-center cuts  relative">
-          <article class="bag offers ">
-            <h2 class="discount-title cross-bag neutrale-dark">
-              FS - QUILTED MAXI CROSS BAG
-            </h2>
-            <div>
-              
+      <nav>
+        <ul class="flex-between header-ul">
+          <li class="first-li">
+            <a href="#" class="active hover relative">HOME</a>
+            <ul class="flex-between categorys absolute">
+
+              <li class="ratings">Category
+                <ul>
+                  <li class="category"><a href="#">Coporate Shoes</a></li>
+                  <li class="category"><a href="#">Sneakers</a></li>
+                  <li class="category"><a href="#">Sandals </a></li>
+                  <li class="category"><a href="#">Sport Shoe</a></li>
+                  <li class="category"><a href="#">Trainers</a></li>
+                </ul>
+              </li>
+              <li class="align-self ratings">
+                <ul>
+                  <li class="category"><a href="#">Coporate Shoes</a></li>
+                  <li class="category"><a href="#">Sneakers</a></li>
+                  <li class="category"><a href="#">Sandals</a></li>
+                  <li class="category"><a href="#">Sport Shoe</a></li>
+                  <li class="category"><a href="#">Trainers</a></li>
+                </ul>
+              </li>
+              <li class="ratings">Category
+                <ul>
+                  <li class="category"><a href="#">HOT DEAL</a></li>
+                  <li class="category"><a href="#">Sunglasses</a></li>
+                  <li class="category"><a href="#">Belts</a></li>
+                  <li class="category"><a href="#">Handbags</a></li>
+                  <li class="category"><a href="#">Sneakers</a></li>
+                </ul>
+              </li>
+              <li class="align-self ratings">
+                <ul>
+                  <li class="category"><a href="#">HOT DEAL</a></li>
+                  <li class="category"><a href="#">Sunglasses</a></li>
+                  <li class="category"><a href="#"> Belts</a></li>
+                  <li class="category"><a href="#"> Handbags</a></li>
+                  <li class="category"><a href="#">Sneakers</a></li>
+                </ul>
+              </li>
+              <li class="ratings">Category
+                <ul>
+                  <li class="category"><a href="#">Coporate Shoes</a></li>
+                  <li class="category"><a href="#">Sneakers</a></li>
+                  <li class="category"><a href="#"> Sandals</a></li>
+                  <li class="category"><a href="#"> Sport Shoe</a></li>
+                  <li class="category"><a href="#">Trainers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#" class="hover">BAGS</a></li>
+          <li><a href="#" class="hover">SNAEKERS</a></li>
+          <li><a href="#" class="hover">BELT</a></li>
+          <li><a href="./contact-us.html" class="hover">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container best-chois aling-center">
+        <h1>Super Flash Sale 50% Off</h1>
+      </div>
+    </section>
+    <section>
+      <div class="flex-center cuts  relative">
+        <article class="bag offers ">
+          <h2 class="discount-title cross-bag neutrale-dark">
+            FS - QUILTED MAXI CROSS BAG
+          </h2>
+          <div>
+
             <span class="old-price  text-decoration">$534,33</span>
             <strong class="ratio  primary-red">24% Off</strong>
-            </div>
-            <strong class="new-price  primary-blue">$299,43</strong>
-          </article>
-          <article class="yellow-shoes ">
-            <div class="medium">
+          </div>
+          <strong class="new-price  primary-blue">$299,43</strong>
+        </article>
+        <article class="yellow-shoes ">
+          <div class="medium">
             <h2 class="discount-title air-max neutrale-dark">
               FS - Nike Air Max 270 React...
             </h2>
             <strong class="new-price primary-blue">$299,43</strong>
           </div>
-<div class="align-end">
+          <div class="align-end">
             <span class="old-price  text-decoration">$534,33</span>
             <strong class="ratio primary-red">24% Off</strong>
           </div>
-           
-          </article>
-          <article class="red-shoes  offers">
-            <h2 class="discount-title air-max neutrale-dark">
-              FS - Nike Air Max 270 React...
-            </h2>
-<div class="free-space">
+
+        </article>
+        <article class="red-shoes  offers">
+          <h2 class="discount-title air-max neutrale-dark">
+            FS - Nike Air Max 270 React...
+          </h2>
+          <div class="free-space">
             <span class="old-price  text-decoration">$534,33</span>
             <strong class="ratio  primary-red">24% Off</strong>
           </div>
-            <strong class="new-price  primary-blue">$299,43</strong>
-          </article>
-        </div>
-      </section>
-      <section class="container best-seller">
-        <h2 class="seller-title">BEST SELLER</h2>
-        <nav>
-          <ul class="flex-center seller">
-            <li><button class="hover capitalize active line">all</button></li>
-            <li><button class="hover capitalize line-hover">bags</button></li>
-            <li><button class="hover capitalize line-hover">Sneakers</button></li>
-            <li><button class="hover capitalize line-hover">belt</button></li>
-            <li><button class="hover capitalize line-hover">Sunglasses</button></li>
-          </ul>
-        </nav>
+          <strong class="new-price  primary-blue">$299,43</strong>
+        </article>
+      </div>
+    </section>
+    <section class="container best-seller">
+      <h2 class="seller-title">BEST SELLER</h2>
+      <nav>
+        <ul class="flex-center seller">
+          <li><button class="hover capitalize active line seller-font">all</button></li>
+          <li><button class="hover capitalize line-hover  seller-font">bags</button></li>
+          <li><button class="hover capitalize line-hover  seller-font">Sneakers</button></li>
+          <li><button class="hover capitalize line-hover  seller-font">belt</button></li>
+          <li><button class="hover capitalize line-hover  seller-font">Sunglasses</button></li>
+        </ul>
+      </nav>
 
-        <div class="flex-between">
-          <article class="card">
-            <div class="card-hover">
-              <img class="image" src="./images/hot.png" alt="air-max-shoes" />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
+      <div class="flex-between">
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/hot-shoes.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img  src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/bag-maron.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-          </article>
-          <article class="card">
-            <div class="card-hover">
-              <img
-                class="image"
-                src="./images/bag-maron.png"
-                alt="air-max-shoes"
-              />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/bag-yellow.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img  src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/blue-shoes.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-          </article>
-          <article class="card">
-            <div class="card-hover">
-              <img
-                class="image"
-                src="./images/bag-yellow.png"
-                alt="air-max-shoes"
-              />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+      </div>
+      <div class="flex-between cards">
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/shoes-seller-1.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/yellow-shoes-2.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-          </article>
-          <article class="card">
-            <div class="card-hover">
-              <img
-                class="image"
-                src="./images/blue-shoes.png"
-                alt="air-max-shoes"
-              />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/shoes-seller.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img  src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-hover">
+            <img class="image" src="./images/blue-shoes.png" alt="air-max-shoes" />
+            <div class="hover-action absolute">
+              <img class="item-hover" src="./images/item-hover.png" alt="item-hover" />
             </div>
-          </article>
-        </div>
-        <div class="flex-between cards">
-          <article class="card">
-            <div class="card-hover">
-              <img
-                class="image"
-                src="./images/shoes-seller-1.png"
-                alt="air-max-shoes"
-              />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
-            </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-hover">
-              <img
-                class="image"
-                src="./images/yellow-shoes-2.png"
-                alt="air-max-shoes"
-              />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
-            </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-hover">
-              <img
-                class="image"
-                src="./images/shoes-seller.png"
-                alt="air-max-shoes"
-              />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
-            </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-hover">
-              <img
-                class="image"
-                src="./images/blue-shoes.png"
-                alt="air-max-shoes"
-              />
-              <div class="hover-action absolute">
-                <img
-                  class="item-hover"
-                  src="./images/item-hover.png"
-                  alt="item-hover"
-                />
-              </div>
-            </div>
-            <h3 class="neutrale-dark discount-title-seller">
-              Nike Air Max 270 React
-            </h3>
-            <img src="./images/stars.png" alt="stars" />
-            <div>
-              <strong class="new-price-seller primary-blue">$299,43</strong>
-              <del class="old-price-seller text-decoration">$534,33</del>
-              <strong class="ratio-seller primary-red">24% Off</strong>
-            </div>
-          </article>
-        </div>
-        <button class="line more-seller primary-blue">LOAD MORE</button>
-      </section>
-      <section class="adidas relative">
-        <div class="shop container">
-          <h2 class="adidas-men">Adidas Men Running Sneakers</h2>
-          <p class="paragraphe">
-            Performance and design. Taken right to the edge.
+          </div>
+          <h3 class="neutrale-dark discount-title-seller">
+            Nike Air Max 270 React
+          </h3>
+          <img src="./images/stars.png" alt="stars" />
+          <div>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+          </div>
+        </article>
+      </div>
+      <button class="line more-seller primary-blue">LOAD MORE</button>
+    </section>
+    <section class="adidas relative">
+      <div class="shop container">
+        <h2 class="adidas-men">Adidas Men Running Sneakers</h2>
+        <p class="paragraphe">
+          Performance and design. Taken right to the edge.
+        </p>
+        <a class="shop-now" href="#">SHOP NOW</a>
+      </div>
+    </section>
+    <section>
+      <div class="flex-between container best-way">
+        <div class="shipping awsome-1">
+          <h3 class="shipping-haeding">FREE SHIPPING</h3>
+          <p class="brief">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
           </p>
-          <a class="shop-now" href="#">SHOP NOW</a>
         </div>
-      </section>
-      <section>
-        <div class="flex-between container best-way">
-          <div class="shipping awsome-1">
-            <h3 class="shipping-haeding">FREE SHIPPING</h3>
-            <p class="brief">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-          <div class="shipping awsome-2">
-            <h3 class="shipping-haeding">100% REFUND</h3>
-            <p class="brief">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
-          <div class="shipping awsome-3">
-            <h3 class="shipping-haeding">SUPPORT 24/7</h3>
-            <p class="brief">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-          </div>
+        <div class="shipping awsome-2">
+          <h3 class="shipping-haeding">100% REFUND</h3>
+          <p class="brief">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
         </div>
-      </section>
+        <div class="shipping awsome-3">
+          <h3 class="shipping-haeding">SUPPORT 24/7</h3>
+          <p class="brief">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        <h2 class="news">LATEST NEWS</h2>
-        <div class="flex-between container">
-          <div class="flex-start">
-            <img src="./images/nike-logo.png" alt="nike-logo" />
-            <div class="news-discription">
-              <span class="date">01 Jan, 2015</span>
-              <h3 class="latest">Fashion Industry</h3>
-              <p class="brief">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-          <div class="flex-start">
-            <img src="./images/figma-logo.png" alt="figma-logo" />
-            <div class="news-discription">
-              <span class="date">01 Jan, 2015</span>
-              <h3 class="latest">Best Design Tools</h3>
-              <p class="brief">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-          <div class="flex-start">
-            <img src="./images/kronos-logo.png" alt="kronos-logo" />
-            <div class="news-discription">
-              <span class="date">01 Jan, 2015</span>
-              <h3 class="latest">HR Community</h3>
-              <p class="brief">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+    <section>
+      <h2 class="news">LATEST NEWS</h2>
+      <div class="flex-between container">
+        <div class="flex-start">
+          <img src="./images/nike-logo.png" alt="nike-logo" />
+          <div class="news-discription">
+            <span class="date">01 Jan, 2015</span>
+            <h3 class="latest">Fashion Industry</h3>
+            <p class="brief">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
           </div>
         </div>
-      </section>
-      <section>
-        <h2 class="featured-products">FEATURED PRODUCTS</h2>
-        <div class="flex-between container">
-          <div class="flex-start align-flex-start">
-            <img src="./images/class-shoes.png" alt="class-shoes" />
-            <div class="swade">
-              <h3 class="blue-swade">Blue Swade Nike Sneakers</h3>
-              <img class="stars" src="./images/stars.png" alt="stars" />
-              <strong class="primary-red featured-new-price">$499</strong>
-              <del class="featured-old-price">$599</del>
-            </div>
-          </div>
-          <div class="flex-start align-flex-start">
-            <img src="./images/class-shoes.png" alt="class-shoes" />
-            <div class="swade">
-              <h3 class="blue-swade">Blue Swade Nike Sneakers</h3>
-              <img class="stars" src="./images/stars.png" alt="stars" />
-              <strong class="primary-red featured-new-price">$499</strong>
-              <del class="featured-old-price">$599</del>
-            </div>
-          </div>
-          <div class="flex-start align-flex-start">
-            <img src="./images/class-shoes.png" alt="class-shoes" />
-            <div class="swade">
-              <h3 class="blue-swade">Blue Swade Nike Sneakers</h3>
-              <img class="stars" src="./images/stars.png" alt="stars" />
-              <strong class="primary-red featured-new-price">$499</strong>
-              <del class="featured-old-price">$599</del>
-            </div>
+        <div class="flex-start">
+          <img src="./images/figma-logo.png" alt="figma-logo" />
+          <div class="news-discription">
+            <span class="date">01 Jan, 2015</span>
+            <h3 class="latest">Best Design Tools</h3>
+            <p class="brief">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
           </div>
         </div>
-        <div class="search">
-          <form class="form">
-            <input
-              type="text"
-              placeholder="Search query..."
-              class="search-query"
-            />
-            <input type="submit" value="Search" class="submit" />
-          </form>
+        <div class="flex-start">
+          <img src="./images/kronos-logo.png" alt="kronos-logo" />
+          <div class="news-discription">
+            <span class="date">01 Jan, 2015</span>
+            <h3 class="latest">HR Community</h3>
+            <p class="brief proxima-font">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="ecomm">
-        <div class="container">
+      </div>
+    </section>
+    <section>
+      <h2 class="featured-products">FEATURED PRODUCTS</h2>
+      <div class="flex-between container">
+        <div class="flex-start align-flex-start">
+          <img src="./images/class-shoes.png" alt="class-shoes" />
+          <div class="swade">
+            <h3 class="blue-swade proxima-font">Blue Swade Nike Sneakers</h3>
+            <img class="stars" src="./images/stars.png" alt="stars" />
+            <strong class="primary-red featured-new-price">$499</strong>
+            <del class="featured-old-price">$599</del>
+          </div>
+        </div>
+        <div class="flex-start align-flex-start">
+          <img src="./images/class-shoes.png" alt="class-shoes" />
+          <div class="swade">
+            <h3 class="blue-swade proxima-font">Blue Swade Nike Sneakers</h3>
+            <img class="stars" src="./images/stars.png" alt="stars" />
+            <strong class="primary-red featured-new-price">$499</strong>
+            <del class="featured-old-price">$599</del>
+          </div>
+        </div>
+        <div class="flex-start align-flex-start">
+          <img src="./images/class-shoes.png" alt="class-shoes" />
+          <div class="swade">
+            <h3 class="blue-swade proxima-font">Blue Swade Nike Sneakers</h3>
+            <img class="stars" src="./images/stars.png" alt="stars" />
+            <strong class="primary-red featured-new-price">$499</strong>
+            <del class="featured-old-price proxima-font">$599</del>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <form class="form">
+          <input type="text" placeholder="Search query..." class="search-query proxima-font" />
+          <input type="submit" value="Search" class="submit" />
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="ecomm">
+    <div class="container">
       <div class="flex-between align-flex-start adress ">
         <div>
-            <div >
-                <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
-                <span class="logo-text">E-comm</span></a>
-              </div>
+          <div>
+            <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
+              <span class="logo-text">E-comm</span></a>
+          </div>
           <p class="footer-paragraph">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -504,62 +439,64 @@
           </p>
         </div>
         <div class="contact-follow">
-            <h3>Follow Us</h3>
-            <p class="follow">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-            <a href="#"><img src="./images/facebook.png" alt="facebook-logo"></a>
-            <a href="#"><img src="./images/twitter.png" class="twitter" alt="twitter-logo"></a>
+          <h3>Follow Us</h3>
+          <p class="follow proxima-font">Since the 1500s, when an unknown printer took a galley of type and scrambled.
+          </p>
+          <a href="#"><img src="./images/facebook.png" alt="facebook-logo"></a>
+          <a href="#"><img src="./images/twitter.png" class="twitter" alt="twitter-logo"></a>
         </div>
         <div class="contact-follow">
-            <h3 >Contact Us</h3>
-            <address class="contact">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</address>
+          <h3>Contact Us</h3>
+          <address class="contact">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</address>
         </div>
       </div>
       <ul class="flex-between more ">
-      <li class="more-title" >information
-        <ul class="footer-ul">
-              <li><a href=""> About Us </a></li> 
-              <li><a href="">  Infomation </a></li> 
-              <li><a href="">  Privacy Policy</a></li> 
-              <li><a href=""> Terms & Conditions</a></li> 
+        <li class="more-title">information
+          <ul class="footer-ul">
+            <li><a href=""> About Us </a></li>
+            <li><a href=""> Infomation </a></li>
+            <li><a href=""> Privacy Policy</a></li>
+            <li><a href=""> Terms & Conditions</a></li>
+          </ul>
+        </li>
+
+        <li class="more-title">Service
+          <ul class="footer-ul">
+            <li> <a href="#" class="">About Us</a></li>
+            <li> <a href="#" class=""> Infomation </a></li>
+            <li> <a href="#" class=""> Privacy Policy</a></li>
+            <li> <a href="#" class="">Terms & Conditions</a></li>
+          </ul>
+        </li>
+        <li class="more-title">My Account
+          <ul class="footer-ul">
+            <li> <a href="#" class="">About Us</a></li>
+            <li> <a href="#" class=""> Infomation </a></li>
+            <li> <a href="#" class=""> Privacy Policy</a></li>
+            <li> <a href="#" class="">Terms & Conditions</a></li>
+          </ul>
+        </li>
+        <li class="more-title">Our Offers
+          <ul class="footer-ul ">
+            <li> <a href="#" class=""></a>About Us</a></li>
+            <li> <a href="#" class=""></a> Infomation</a></li>
+            <li> <a href="#" class=""></a> Privacy Policy</a></li>
+            <li> <a href="#" class=""></a>Terms & Conditions</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-       
-            <li  class="more-title">Service
-              <ul class="footer-ul">
-              <li> <a href="#" class="">About Us</a></li>
-              <li> <a href="#" class=""> Infomation </a></li>
-              <li> <a href="#" class=""> Privacy Policy</a></li>
-              <li> <a href="#" class="">Terms & Conditions</a></li>
-            </ul>
-            </li>
-            <li class="more-title">My Account
-              <ul class="footer-ul">
-               <li> <a href="#" class="">About Us</a></li>
-               <li> <a href="#" class=""> Infomation </a></li>
-               <li> <a href="#" class=""> Privacy Policy</a></li>
-               <li> <a href="#" class="">Terms & Conditions</a></li>
-               </ul>
-              </li>
-            <li class="more-title">Our Offers
-              <ul class="footer-ul ">
-              <li>  <a href="#" class=""></a>About Us</a></li>
-              <li>  <a href="#" class=""></a> Infomation</a></li>
-              <li>  <a href="#" class=""></a> Privacy Policy</a></li>
-              <li>  <a href="#" class=""></a>Terms & Conditions</a></li>
-            </ul>
-            </li>
-            </ul>
-    
+
       <div class="flex-between main-footer">
-        <address class="adress-web">© 2018 Ecommerce theme by www.bisenbaev.com</address>
+        <address class="adress-web proxima-font">© 2018 Ecommerce theme by www.bisenbaev.com</address>
         <div>
-            <img src="./images/western-union.png" alt="western-union-logo">
-            <img src="./images/master-card.png" alt="master-card">
-            <img src="./images/paypal.png" alt="paypal">
-            <img src="./images/visa.png" alt="visa">
+          <img src="./images/western-union.png" alt="western-union-logo">
+          <img src="./images/master-card.png" alt="master-card">
+          <img src="./images/paypal.png" alt="paypal">
+          <img src="./images/visa.png" alt="visa">
         </div>
       </div>
     </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>

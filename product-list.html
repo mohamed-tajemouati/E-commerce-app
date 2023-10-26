@@ -1,121 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-comm</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/139d8ece62.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/product-list.css">
-  </head>
 
-  <body>
-    <header class="container">
-      <div class="top-header flex-between">
-        <div class="flex-between">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-comm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/139d8ece62.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/product-list.css">
+</head>
+
+<body>
+  <header class="container">
+    <div class="top-header flex-between">
+      <div class="flex-between">
         <select class="choices" name="langue" id="langue">
-        <option value="english">EN</option>
-        <option value="french">FR</option>
-        <option value="arabe">AR</option>
-      </select>
-      <select class="choices" name="currency" id="currency">
-        <option value="unated stat dollar">USD</option>
-        <option value="eoro">EUR</option>
-        <option value="maroc dirham">MAD</option>
-      </select>
-      
-        </div>
-        <div>
-          <div class="flex-between personal-info">
-            <div class="profile">
-              <a href="#">
+          <option value="english">EN</option>
+          <option value="french">FR</option>
+          <option value="arabe">AR</option>
+        </select>
+        <select class="choices" name="currency" id="currency">
+          <option value="unated stat dollar">USD</option>
+          <option value="eoro">EUR</option>
+          <option value="maroc dirham">MAD</option>
+        </select>
+
+      </div>
+      <div>
+        <div class="flex-between personal-info">
+          <div class="profile">
+            <a href="#">
               <i class="fa-regular fa-user"></i>
               my profile</a>
+          </div>
+
+
+          <a href="">Items</a>
+
+          <a href="">
+            <strong class="price">$0.00</strong>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-header flex-between">
+      <div>
+        <a href="./index.html" class="aling-center"><img src="./images/logo.png" alt="logo" />
+          <span class="logo-text">E-comm</span></a>
+      </div>
+      <nav>
+        <ul class="flex-between header-ul">
+          <li class="first-li">
+            <a href="#" class=" hover active">HOME</a>
+          </li>
+          <li><a href="#" class="hover">BAGS</a></li>
+          <li><a href="#" class="hover">SNAEKERS</a></li>
+          <li><a href="#" class="hover">BELT</a></li>
+          <li><a href="#" class="hover ">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main>
+
+    <nav class="bread-crumps">
+      <a href="#" class="active slach">Home</a>
+      <a href="#" class="">Hot Deal</a>
+    </nav>
+
+    <section class="container deals ">
+      <aside>
+        <div class="box-1 capitalize">
+          <h2> hot deals</h2>
+          <ul class="  proxima-font">
+            <li class="li-aside flex-between hover">nike <span class="deals-quantity">2</span></li>
+            <li class="li-aside active flex-between">airmax <span class="deals-quantity">48</span></li>
+            <li class="li-aside hover flex-between"> nike<span class="deals-quantity">14</span></li>
+            <li class="li-aside hover flex-between">adidas <span class="deals-quantity">15</span></li>
+            <li class="li-aside hover flex-between">vans <span class="deals-quantity">23</span></li>
+            <li class="li-aside hover flex-between">all stars <span class="deals-quantity">1</span></li>
+            <li class="li-aside hover flex-between">adidas <span class="deals-quantity">95</span></li>
+          </ul>
+        </div>
+        <div class="deals-prices">
+          <h2>prices</h2>
+          <div class="range proxima-font">
+            <div class="above-range">
+              <label for="range">Ranger</label>
+              <span class="price-range">
+                $13.99 - $25.99
+              </span>
             </div>
-
-
-            <a href="">Items</a>
-
-            <a href="">
-              <strong class="price">$0.00</strong>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
+            <input type="range" name="range" class="range-input" id="" min="0" max="100" step="10">
           </div>
         </div>
-      </div>
-      <div class="main-header flex-between">
-        <div >
-          <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
-          <span class="logo-text">E-comm</span></a>
+        <div class="form-check">
+          <h2>COLOR</h2>
+          <form class="form-check-gap">
+            <input type="radio" class=" form-check-blue" name="radio" checked>
+            <input type="radio" class="form-check-orange" name="radio">
+            <input type="radio" class="form-check-black" name="radio">
+            <input type="radio" class="form-check-yellow" name="radio">
+            <input type="radio" class="form-check-dark-pink" name="radio">
+            <input type="radio" class="form-check-light-pink" name="radio">
+          </form>
         </div>
-        <nav>
-          <ul class="flex-between header-ul">
-            <li class="first-li">
-              <a href="#" class=" hover relative">HOME</a>
-            </li>
-            <li><a href="#" class="hover">BAGS</a></li>
-            <li><a href="#" class="hover">SNAEKERS</a></li>
-            <li><a href="#" class="hover">BELT</a></li>
-            <li><a href="#" class="hover active">CONTACT</a></li>
+
+        <div class="main-aside capitalize">
+          <h2>BRAND </h2>
+          <ul class=" proxima-font">
+            <li class="li-aside flex-between hover">nike <span class="deals-quantity">99</span></li>
+            <li class="li-aside flex-between active">nike <span class="deals-quantity">99</span></li>
+            <li class="li-aside flex-between hover">adidas<span class="deals-quantity">99</span></li>
+            <li class="li-aside flex-between hover">siemens <span class="deals-quantity">99</span></li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div>
 
-
-
-    <main>
-        <section class="bread-crumps">
-            <nav class="nav-bread-crumps">
-                <a href="#" class="active">Home</a>
-                <span>/</span>
-                <a href="#">Hot Deal</a>
-            </nav>
-        </section>
-        <section class="container deals">
-        <aside>
-            <div class="box-1 capitalize">
-               <h2> hot deals</h2>
-                <div class="top-aside flex-between">
-                    <ul>
-                        <li class="li-aside"><a href="#" >nike</a></li>
-                        <li class="li-aside"><a href="#" class="active">airmax</a></li>
-                        <li class="li-aside"><a href="#">nike</a></li>
-                        <li class="li-aside"><a href="#">adidas</a></li>
-                        <li class="li-aside"><a href="#">vans</a></li>
-                        <li class="li-aside"><a href="#">all stars</a></li>
-                        <li class="li-aside"><a href="#"></a>adidas</li>
-                    </ul>
-                    <ul class="deals-quantity">
-                        <li class="li-aside"><a href="#" >2</a></li>
-                        <li class="li-aside"><a href="#" class="active">48</a></li>
-                        <li class="li-aside"><a href="#" >14</a></li>
-                        <li class="li-aside"><a href="#" >15</a></li>
-                        <li class="li-aside"><a href="#" >23</a></li>
-                        <li class="li-aside"><a href="#" ></a>1</li>
-                        <li class="li-aside"><a href="#" ></a>95</li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-              <h2>prices</h2>
-              <div>
-                <label for="">ranger</label>
-                <strong>$13.99 - $25.99</strong>
-                <input type="range" name="range" id="" min="0" max="100" step="10" aria-valuemax="">
+        <label for="more" class="more-button">MORE</label>
+        <input type="checkbox" name="" id="more" class="hide-input">
+        <div class="hide-more">
+          <div class="deals-prices ">
+            <h2>prices</h2>
+            <div class="range proxima-font">
+              <div class="above-range">
+                <label for="range">Ranger</label>
+                <span class="price-range">
+                  $15.99 - $27.99
+                </span>
               </div>
+              <input type="range" name="range" class="range-input" id="" min="0" max="100" step="10">
             </div>
-        </aside>
-      </section>
+          </div>
+          <div class="form-check">
+            <h2>COLOR</h2>
+            <div class="form-check-gap">
+              <input type="radio" class=" form-check-blue" name="radio" checked>
+              <input type="radio" class="form-check-orange" name="radio">
+              <input type="radio" class="form-check-black" name="radio">
+              <input type="radio" class="form-check-yellow" name="radio">
+              <input type="radio" class="form-check-dark-pink" name="radio">
+              <input type="radio" class="form-check-light-pink" name="radio">
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="product ">
+        <div class="adidas relative">
+          <div class="shop">
+            <h2 class="adidas-men">Adidas Men Running Sneakers</h2>
+            <p class="paragraphe">
+              Performance and design. Taken right to the edge.
+            </p>
+            <a class="shop-now" href="#">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="flex-between nav-product proxima-font">
+          <span>13 items</span>
+          <div class="sort-select">
+            <label for="">sort by</label>
+            <select name="name" id="" class="nav-select">
+              <option value="1">name</option>
+              <option value="2">color</option>
+              <option value="3">price</option>
 
-    </main>
+            </select>
+          </div>
+          <div class="chow-select">
+            <label for="">show</label>
+            <select name="" id="" class="nav-select">
+              <option value="">12</option>
+              <option value="">24</option>
+              <option value="">36</option>
+            </select>
+          </div>
+
+
+        </div>
+
+        <article class="brand-article flex">
+          <div>
+            <img src="./images/nike-shoes.png" alt="shoes">
+          </div>
+          <div class="shops">
+            <h2 class="brand">Nike Airmax 270 React</h2>
+            <img class="star" src="./images/stars.png" alt="stars">
+            <span class="review-nember">0 reviews</span>
+            <button class="review-button">Submit a review</button>
+            <hr>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+            <p class="branded">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate,
+              tristique
+              ut
+              lectus.
+              Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+              ...
+            </p>
+
+            <button class="shop-button proxima-font"><a href="#">Add To Cart</a></button>
+            <button class="heart"><img src="./images/heart.png" alt="heart" srcset=""></button>
+          </div>
+        </article>
+
+        <article class="brand-article flex">
+          <div>
+            <img src="./images/bag-maron.png" alt="shoes">
+          </div>
+          <div class="shops">
+            <h2 class="brand">Nike Airmax 270 React</h2>
+            <img class="star" src="./images/stars.png" alt="stars">
+            <span class="review-nember">0 reviews</span>
+            <button class="review-button">Submit a review</button>
+            <hr>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+            <p class="branded">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate,
+              tristique
+              ut
+              lectus.
+              Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+              ...
+            </p>
+
+            <button class="shop-button proxima-font"><a href="#">Add To Cart</a></button>
+            <button class="heart"><img src="./images/heart.png" alt="heart" srcset=""></button>
+          </div>
+        </article>
+
+        <article class="brand-article flex">
+          <div>
+            <img src="./images/shoes-seller.png" alt="shoes">
+          </div>
+          <div class="shops">
+            <h2 class="brand">Nike Airmax 270 React</h2>
+            <img class="star" src="./images/stars.png" alt="stars">
+            <span class="review-nember">0 reviews</span>
+            <button class="review-button">Submit a review</button>
+            <hr>
+            <strong class="new-price-seller primary-blue">$299,43</strong>
+            <del class="old-price-seller text-decoration">$534,33</del>
+            <strong class="ratio-seller primary-red">24% Off</strong>
+            <p class="branded">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate,
+              tristique
+              ut
+              lectus.
+              Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+              ...
+            </p>
+
+            <button class="shop-button proxima-font"><a href="#">Add To Cart</a></button>
+            <button class="heart"><img src="./images/heart.png" alt="heart" srcset=""></button>
+          </div>
+        </article>
+
+        <article class="brand-article next-article">
+          <div class="flex">
+            <div>
+              <img src="./images/shoes-seller-1.png" alt="shoes">
+            </div>
+            <div class="shops">
+              <h2 class="brand">Nike Airmax 270 React</h2>
+              <img class="star" src="./images/stars.png" alt="stars">
+              <span class="review-nember">0 reviews</span>
+              <button class="review-button">Submit a review</button>
+              <hr>
+              <strong class="new-price-seller primary-blue">$299,43</strong>
+              <del class="old-price-seller text-decoration">$534,33</del>
+              <strong class="ratio-seller primary-red">24% Off</strong>
+              <p class="branded">Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate,
+                tristique
+                ut
+                lectus.
+                Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor
+                ...
+              </p>
+
+              <button class="shop-button proxima-font"><a href="#">Add To Cart</a></button>
+              <button class="heart"><img src="./images/heart.png" alt="heart" srcset=""></button>
+            </div>
+          </div>
+
+          <div class="next-brand">
+            <button class="button-next-brand">1</button>
+            <button class="button-next-brand">2</button>
+            <button class="button-next-brand active-brand">3</button>
+            <button class="button-next-brand">4</button>
+            <button class="button-next-brand">5</button>
+          </div>
+      </div>
+      </article>
+    </section>
+  </main>
 
 
 
@@ -125,14 +312,14 @@
 
 
 
-    <footer class="ecomm">
-        <div class="container">
+  <footer class="ecomm">
+    <div class="container">
       <div class="flex-between align-flex-start adress ">
         <div>
-            <div >
-                <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
-                <span class="logo-text">E-comm</span></a>
-              </div>
+          <div>
+            <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
+              <span class="logo-text">E-comm</span></a>
+          </div>
           <p class="footer-paragraph">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -140,62 +327,64 @@
           </p>
         </div>
         <div class="contact-follow">
-            <h3>Follow Us</h3>
-            <p class="follow">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-            <a href="#"><img src="./images/facebook.png" alt="facebook-logo"></a>
-            <a href="#"><img src="./images/twitter.png" class="twitter" alt="twitter-logo"></a>
+          <h3>Follow Us</h3>
+          <p class="follow proxima-font">Since the 1500s, when an unknown printer took a galley of type and scrambled.
+          </p>
+          <a href="#"><img src="./images/facebook.png" alt="facebook-logo"></a>
+          <a href="#"><img src="./images/twitter.png" class="twitter" alt="twitter-logo"></a>
         </div>
         <div class="contact-follow">
-            <h3 >Contact Us</h3>
-            <address class="contact">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</address>
+          <h3>Contact Us</h3>
+          <address class="contact">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</address>
         </div>
       </div>
       <ul class="flex-between more ">
-      <li class="more-title" >information
-        <ul class="footer-ul">
-              <li><a href=""> About Us </a></li> 
-              <li><a href="">  Infomation </a></li> 
-              <li><a href="">  Privacy Policy</a></li> 
-              <li><a href=""> Terms & Conditions</a></li> 
+        <li class="more-title">information
+          <ul class="footer-ul">
+            <li><a href=""> About Us </a></li>
+            <li><a href=""> Infomation </a></li>
+            <li><a href=""> Privacy Policy</a></li>
+            <li><a href=""> Terms & Conditions</a></li>
+          </ul>
+        </li>
+
+        <li class="more-title">Service
+          <ul class="footer-ul">
+            <li> <a href="#" class="">About Us</a></li>
+            <li> <a href="#" class=""> Infomation </a></li>
+            <li> <a href="#" class=""> Privacy Policy</a></li>
+            <li> <a href="#" class="">Terms & Conditions</a></li>
+          </ul>
+        </li>
+        <li class="more-title">My Account
+          <ul class="footer-ul">
+            <li> <a href="#" class="">About Us</a></li>
+            <li> <a href="#" class=""> Infomation </a></li>
+            <li> <a href="#" class=""> Privacy Policy</a></li>
+            <li> <a href="#" class="">Terms & Conditions</a></li>
+          </ul>
+        </li>
+        <li class="more-title">Our Offers
+          <ul class="footer-ul ">
+            <li> <a href="#" class=""></a>About Us</a></li>
+            <li> <a href="#" class=""></a> Infomation</a></li>
+            <li> <a href="#" class=""></a> Privacy Policy</a></li>
+            <li> <a href="#" class=""></a>Terms & Conditions</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-       
-            <li  class="more-title">Service
-              <ul class="footer-ul">
-              <li> <a href="#" class="">About Us</a></li>
-              <li> <a href="#" class=""> Infomation </a></li>
-              <li> <a href="#" class=""> Privacy Policy</a></li>
-              <li> <a href="#" class="">Terms & Conditions</a></li>
-            </ul>
-            </li>
-            <li class="more-title">My Account
-              <ul class="footer-ul">
-               <li> <a href="#" class="">About Us</a></li>
-               <li> <a href="#" class=""> Infomation </a></li>
-               <li> <a href="#" class=""> Privacy Policy</a></li>
-               <li> <a href="#" class="">Terms & Conditions</a></li>
-               </ul>
-              </li>
-            <li class="more-title">Our Offers
-              <ul class="footer-ul ">
-              <li>  <a href="#" class=""></a>About Us</a></li>
-              <li>  <a href="#" class=""></a> Infomation</a></li>
-              <li>  <a href="#" class=""></a> Privacy Policy</a></li>
-              <li>  <a href="#" class=""></a>Terms & Conditions</a></li>
-            </ul>
-            </li>
-            </ul>
-    
+
       <div class="flex-between main-footer">
         <address class="adress-web">© 2018 Ecommerce theme by www.bisenbaev.com</address>
         <div>
-            <img src="./images/western-union.png" alt="western-union-logo">
-            <img src="./images/master-card.png" alt="master-card">
-            <img src="./images/paypal.png" alt="paypal">
-            <img src="./images/visa.png" alt="visa">
+          <img src="./images/western-union.png" alt="western-union-logo">
+          <img src="./images/master-card.png" alt="master-card">
+          <img src="./images/paypal.png" alt="paypal">
+          <img src="./images/visa.png" alt="visa">
         </div>
       </div>
     </div>
-    </footer>
-  </body>
-  </html>
+  </footer>
+</body>
+
+</html>
