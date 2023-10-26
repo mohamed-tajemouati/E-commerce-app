@@ -358,11 +358,12 @@ height: 239px;
 .promo-title {
 color: #c1c8ce;
 font-family: "proxima nova";
+font-size: 18px;
 }
 
 @font-face{
   font-family: "proxima nova";
-  src: url(../images/font/Proxima-Nova-Extra-Condensed.zip);
+  src: url(../images/font/Fontspring-DEMO-proximanova-black.otf);
 }
 
 
