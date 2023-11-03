@@ -4,7 +4,6 @@ li{
 
 .active-product{
  color: #33a0ff;
-
 }
 
 .bread-crumps {
@@ -31,7 +30,7 @@ top: 7px;
 .customer-space {
 display: flex;
 margin-top: 40px;
-margin-bottom: 40px;
+margin-bottom: 60px;
 }
 
 .preferences {
@@ -348,23 +347,48 @@ padding: 20px 30px 0 ;
 
 .right-aside {
 width: 23%;
+
 }
 
 .promo {
-width: 283px;
-height: 239px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+border: 3px solid #f6f7f8;
+border-radius: 6px;
+margin-top: 35px;
+padding-bottom: 35px;
+position: relative;
+}
+
+.img-promo {
+width: 297px;
+height: 250px;
 }
 
 .promo-title {
 color: #c1c8ce;
-font-family: "proxima nova";
-font-size: 18px;
 }
 
-@font-face{
-  font-family: "proxima nova";
-  src: url(../images/font/Fontspring-DEMO-proximanova-black.otf);
+.star {
+padding: 40px 0 10px;
 }
+
+.best-seller {
+margin-bottom: 80px;
+}
+.seller-title {
+margin-bottom: 80px;
+}
+
+.card {
+  border: 3px solid #f6f7f8;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+
 
 
 

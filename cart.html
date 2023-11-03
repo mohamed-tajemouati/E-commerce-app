@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-comm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/139d8ece62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/cart.css" </head>
+
+<body>
+    <header class="container">
+        <div class="top-header flex-between">
+            <div class="flex-between">
+                <select class="choices" name="langue" id="langue">
+                    <option value="english">EN</option>
+                    <option value="french">FR</option>
+                    <option value="arabe">AR</option>
+                </select>
+                <select class="choices" name="currency" id="currency">
+                    <option value="unated stat dollar">USD</option>
+                    <option value="eoro">EUR</option>
+                    <option value="maroc dirham">MAD</option>
+                </select>
+
+            </div>
+            <div>
+                <div class="flex-between personal-info">
+                    <div class="profile">
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                            my profile</a>
+                    </div>
+
+
+                    <a href="">Items</a>
+
+                    <a href="">
+                        <strong class="price">$0.00</strong>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header flex-between">
+            <div>
+                <a href="./index.html" class="aling-center"><img src="./images/logo.png" alt="logo" />
+                    <span class="logo-text">E-comm</span></a>
+            </div>
+            <nav>
+                <ul class="flex-between header-ul">
+                    <li class="first-li">
+                        <a href="./index.html" class=" hover relative">HOME</a>
+                    </li>
+                    <li><a href="#" class="hover">BAGS</a></li>
+                    <li><a href="#" class="hover">SNAEKERS</a></li>
+                    <li><a href="#" class="hover">BELT</a></li>
+                    <li><a href="#" class="hover active">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <nav class="bread-crumps">
+            <a href="./index.html" class="active-product slach">Home</a>
+            <a href="./product-list.html" class="active-product slach">Hot Deal</a>
+            <a href="#" class="">Nike Airmax 270 React</a>
+        </nav>
+
+        <section class="container">
+            <div class="status-bar">
+                <ul class="flex-between head-liste">
+                    <li class="first-statu">PRODUCT</li>
+                    <li>PRICE</li>
+                    <li>QTY</li>
+                    <li>UNIT PRICE</li>
+                </ul>
+            </div>
+
+            <div class="product-card flex-between">
+                <div class="flex-between">
+                    <img src="./images/del.png" alt="delete-icon">
+                    <img class="recize-shoes" src="./images/red-shoes.png" alt="shoes">
+                    <h3 class="name-product">Nike Airmax 270 react</h3>
+                </div>
+                <div class="flex-between">
+                    <span>$998</span>
+                    <div class="wrapper">
+                        <button class="miplus">-</button>
+                        <span class="num">2</span>
+                        <button class="miplus">+</button>
+                    </div>
+                    <span>$499</span>
+                </div>
+            </div>
+
+            <div class="product-card flex-between">
+                <div class="flex-between">
+                    <img src="./images/del.png" alt="delete-icon">
+                    <img class="recize-shoes" src="./images/nike-shoes.png" alt="shoes">
+                    <h3 class="name-product">Nike Airmax 270 react</h3>
+                </div>
+                <div class="flex-between">
+                    <span>$998</span>
+                    <div class="wrapper">
+                        <button class="miplus">-</button>
+                        <span class="num">2</span>
+                        <button class="miplus">+</button>
+                    </div>
+                    <span>$499</span>
+                </div>
+            </div>
+
+            <div class="flex-between card-check">
+                <form class="form">
+                    <input type="text" placeholder="Voucher code" class="voucher" />
+                    <input type="submit" value="Redeem" class="submit" />
+                </form>
+                <div class="check-out capitalize">
+                    <div class="flex-between check">
+                        <h4>subtotal</h4>
+                        <p>$998</p>
+                    </div>
+                    <div class="flex-between check">
+                        <h4>Shipping fee</h4>
+                        <p>$20</p>
+                    </div>
+                    <div class="flex-between check check-border">
+                        <h4>coupon</h4>
+                        <p>no</p>
+                    </div>
+                    <div class="flex-between check ">
+                        <b class="total">total</b>
+                        <b class="total">$1018</b>
+                    </div>
+                    <div class="check-button">
+                        <input type="checkbox" id="show">
+                        <label for="show" class="show-button">Check out</label>
+                        <div class="box">
+                            <div class="flex-between">
+                                <i class="fa-regular fa-arrow-left" style="color: #4097ff;"></i>
+                                <i class="fa-solid fa-xmark fa-xl" style="color: #4097ff;"></i>
+                            </div>
+                            <h2 class="payment">
+                                Make Payment
+                            </h2>
+                            <div class="multiple-step">
+                                <ol class="flex-center">
+                                    <li class="step"><span class="step-number">1 </span></li>
+                                    <li class="step"><span class="step-number">2</span></li>
+                                    <li class="step"><span class="step-number">3</span></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="ecomm">
+        <div class="container">
+            <div class="flex-between align-flex-start adress ">
+                <div>
+                    <div>
+                        <a href="#" class="aling-center"><img src="./images/logo.png" alt="logo" />
+                            <span class="logo-text">E-comm</span></a>
+                    </div>
+                    <p class="footer-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever.Since the 1500s, when an unknown printer.
+                    </p>
+                </div>
+                <div class="contact-follow">
+                    <h3>Follow Us</h3>
+                    <p class="follow">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    <a href="#"><img src="./images/facebook.png" alt="facebook-logo"></a>
+                    <a href="#"><img src="./images/twitter.png" class="twitter" alt="twitter-logo"></a>
+                </div>
+                <div class="contact-follow">
+                    <h3>Contact Us</h3>
+                    <address class="contact">E-Comm , 4578 Marmora Road, Glasgow D04 89GR</address>
+                </div>
+            </div>
+            <ul class="flex-between more ">
+                <li class="more-title">information
+                    <ul class="footer-ul">
+                        <li><a href=""> About Us </a></li>
+                        <li><a href=""> Infomation </a></li>
+                        <li><a href=""> Privacy Policy</a></li>
+                        <li><a href=""> Terms & Conditions</a></li>
+                    </ul>
+                </li>
+
+                <li class="more-title">Service
+                    <ul class="footer-ul">
+                        <li> <a href="#" class="">About Us</a></li>
+                        <li> <a href="#" class=""> Infomation </a></li>
+                        <li> <a href="#" class=""> Privacy Policy</a></li>
+                        <li> <a href="#" class="">Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li class="more-title">My Account
+                    <ul class="footer-ul">
+                        <li> <a href="#" class="">About Us</a></li>
+                        <li> <a href="#" class=""> Infomation </a></li>
+                        <li> <a href="#" class=""> Privacy Policy</a></li>
+                        <li> <a href="#" class="">Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li class="more-title">Our Offers
+                    <ul class="footer-ul ">
+                        <li> <a href="#" class=""></a>About Us</a></li>
+                        <li> <a href="#" class=""></a> Infomation</a></li>
+                        <li> <a href="#" class=""></a> Privacy Policy</a></li>
+                        <li> <a href="#" class=""></a>Terms & Conditions</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="flex-between main-footer">
+                <address class="adress-web">© 2018 Ecommerce theme by www.bisenbaev.com</address>
+                <div>
+                    <img src="./images/western-union.png" alt="western-union-logo">
+                    <img src="./images/master-card.png" alt="master-card">
+                    <img src="./images/paypal.png" alt="paypal">
+                    <img src="./images/visa.png" alt="visa">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+</body>
+
+</html>
